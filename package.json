@@ -1,0 +1,15 @@
+{
+  "name": "recss",
+  "version": "0.1.0",
+  "description": "Recss is a CSS library aiming to make front-end development a blast",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CSS",
+    "SCSS"
+  ],
+  "author": "Bryan King",
+  "license": "MIT"
+}
