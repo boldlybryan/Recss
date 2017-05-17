@@ -1,0 +1,17 @@
+@import 'vars';
+
+@each $size-name, $size-value in $type-scale {
+	.#{$size-name}{
+	  font-size: $size-value;
+	}
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+	@media (min-width: $breakpoint-value){
+		@each $size-name, $size-value in $type-scale {
+			.#{$size-name}--#{$breakpoint-name} {
+				font-size: $size-value;
+			}
+		}
+	}
+}
