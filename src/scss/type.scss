@@ -53,13 +53,37 @@
 }
 
 .t-sans {
-	font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+	font-family: $font-sans;
 }
 
 .t-serif {
-	font-family: Georgia, times, serif;
+	font-family: $font-serif;
 }
 
 .t-mono {
-	font-family: monaco, Consolas, Lucida Console, monospace;
+	font-family: $font-mono;
+}
+
+.t-up {
+	text-transform: uppercase;	
+}
+
+.t-low {
+	text-transform: lowercase;
+}
+
+.t-cap {
+	text-transform: capitalize;
+}
+
+.t-und {
+	text-decoration: underline;
+}
+
+.t-nund {
+	text-decoration: none;
+}
+
+.t-thru {
+	text-decoration: line-through;
 }
