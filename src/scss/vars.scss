@@ -6,3 +6,18 @@ $breakpoints: (
 	xl: 1280px,
 	xxl: 1440px
 );
+
+$type-scale: (
+	t1: 0.75em,
+	t2: 1.00em,
+	t3: 1.25em,
+	t4: 1.50em,
+	t5: 1.75em,
+	t6: 2.00em,
+	t7: 3.00em
+);
+
+//font stacks
+$font-sans: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+$font-serif: Georgia, Times, serif;
+$font-mono: Monaco, Consolas, Lucida Console, monospace;
