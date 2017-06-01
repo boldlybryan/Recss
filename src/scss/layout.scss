@@ -1,0 +1,52 @@
+@import 'vars';
+
+div[class^="col"]{
+	min-height: 1px;
+	padding: $gutter / 2;
+}
+
+@each $col-name, $col-value in $columns {
+	.col__#{$col-name}{
+		width: $col-value;
+	}
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+
+	@media (min-width: $breakpoint-value){
+		@each $col-name, $col-value in $columns {
+			.col__#{$col-name}--#{$breakpoint-name}{
+				width: $col-value;
+			}
+		}
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: $xxl - ($gutter);
+	width: 90%;
+	margin: 0 auto;
+}
+
+.grid--fluid {
+	display: flex;
+	flex-wrap: wrap;
+	@media (min-width: $sm){
+		margin: 0 (-$gutter/2);
+	}
+}
+
+.grid--fixed {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	div[class^="col"]{
+		min-width: 320 - $gutter;
+	}
+
+}
