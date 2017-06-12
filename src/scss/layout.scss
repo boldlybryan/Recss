@@ -1,14 +1,18 @@
 @import 'vars';
 
+body {
+  margin: 0;
+}
+
 div[class^="col"]{
 	min-height: 1px;
 	padding: $gutter / 2;
 }
 
 @each $col-name, $col-value in $columns {
-	.col__#{$col-name}{
-		width: $col-value;
-	}
+  .col__#{$col-name}{
+    width: 100%;
+  }
 }
 
 @each $breakpoint-name, $breakpoint-value in $breakpoints {
@@ -27,23 +31,22 @@ div[class^="col"]{
 }
 
 .container {
-	max-width: $xxl - ($gutter);
-	width: 90%;
+	max-width: $xxl;
 	margin: 0 auto;
+  width: 95%;
 }
 
 .grid--fluid {
 	display: flex;
 	flex-wrap: wrap;
-	@media (min-width: $sm){
-		margin: 0 (-$gutter/2);
-	}
+	margin: 0 (-$gutter/2);
 }
 
 .grid--fixed {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+  margin: 0 (-$gutter/2);
 
 	div[class^="col"]{
 		min-width: 320 - $gutter;
