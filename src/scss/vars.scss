@@ -1,3 +1,11 @@
+$xs: 360px;
+$sm: 512px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1440px;
+
+
 $breakpoints: (
 	xs: 360px,
 	sm: 512px,
@@ -21,3 +29,20 @@ $type-scale: (
 $font-sans: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
 $font-serif: Georgia, Times, serif;
 $font-mono: Monaco, Consolas, Lucida Console, monospace;
+
+//layout and grid
+$spacing: 8px;
+$gutter: 16px;
+
+$columns: (
+	20: 20%,
+	25: 25%,
+	33: 33.33%,
+	40: 40%,
+	50: 50%,
+	60: 60%,
+	66: 66.667%,
+	75: 75%,
+	80: 80%,
+	100: 100%
+);
