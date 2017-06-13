@@ -5,7 +5,7 @@
     background-color: #{$color-hex};
   }
 
-  .bg--hover-#{$color-name} {
+  .bg--hover--#{$color-name} {
     &:hover {
       background-color: #{$color-hex};
     }
