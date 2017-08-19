@@ -62,64 +62,69 @@
   }
 
   @each $breakpoint-name, $breakpoint-value in $breakpoints {
-    .pa#{$i}--#{$breakpoint-name} {
-      padding: $spacing;
-    }
 
-    .px#{$i}--#{$breakpoint-name} {
-      padding-left: $spacing * $i;
-      padding-right: $spacing * $i;
-    }
+    @media (min-width: $breakpoint-value){
 
-    .py#{$i}--#{$breakpoint-name} {
-      padding-top: $spacing * $i;
-      padding-bottom: $spacing * $i;
-    }
+      .pa#{$i}--#{$breakpoint-name} {
+        padding: $spacing;
+      }
 
-    .pt#{$i}--#{$breakpoint-name} {
-      padding-top: $spacing * $i;
-    }
+      .px#{$i}--#{$breakpoint-name} {
+        padding-left: $spacing * $i;
+        padding-right: $spacing * $i;
+      }
 
-    .pr#{$i}--#{$breakpoint-name} {
-      padding-right: $spacing * $i;
-    }
+      .py#{$i}--#{$breakpoint-name} {
+        padding-top: $spacing * $i;
+        padding-bottom: $spacing * $i;
+      }
 
-    .pb#{$i}--#{$breakpoint-name} {
-      padding-bottom: $spacing * $i;
-    }
+      .pt#{$i}--#{$breakpoint-name} {
+        padding-top: $spacing * $i;
+      }
 
-    .pl#{$i}--#{$breakpoint-name} {
-      padding-left: $spacing * $i;
-    }
+      .pr#{$i}--#{$breakpoint-name} {
+        padding-right: $spacing * $i;
+      }
 
-    .ma#{$i}--#{$breakpoint-name} {
-      margin: $spacing * $i;
-    }
+      .pb#{$i}--#{$breakpoint-name} {
+        padding-bottom: $spacing * $i;
+      }
 
-    .mx#{$i}--#{$breakpoint-name} {
-      margin-left: $spacing * $i;
-      margin-right: $spacing * $i;
-    }
+      .pl#{$i}--#{$breakpoint-name} {
+        padding-left: $spacing * $i;
+      }
 
-    .my#{$i}--#{$breakpoint-name} {
-      margin-top: $spacing * $i;
-      margin-bottom: $spacing * $i;
-    }
+      .ma#{$i}--#{$breakpoint-name} {
+        margin: $spacing * $i;
+      }
 
-    .mt#{$i}--#{$breakpoint-name} {
-      margin-top: $spacing * $i;
-    }
+      .mx#{$i}--#{$breakpoint-name} {
+        margin-left: $spacing * $i;
+        margin-right: $spacing * $i;
+      }
 
-    .mr#{$i}--#{$breakpoint-name} {
-      margin-right: $spacing * $i;
-    }
+      .my#{$i}--#{$breakpoint-name} {
+        margin-top: $spacing * $i;
+        margin-bottom: $spacing * $i;
+      }
 
-    .mb#{$i}--#{$breakpoint-name} {
-      margin-bottom: $spacing * $i;
-    }
+      .mt#{$i}--#{$breakpoint-name} {
+        margin-top: $spacing * $i;
+      }
 
-    .ml#{$i}--#{$breakpoint-name} {
-      margin-left: $spacing * $i;
+      .mr#{$i}--#{$breakpoint-name} {
+        margin-right: $spacing * $i;
+      }
+
+      .mb#{$i}--#{$breakpoint-name} {
+        margin-bottom: $spacing * $i;
+      }
+
+      .ml#{$i}--#{$breakpoint-name} {
+        margin-left: $spacing * $i;
+      }
+      
     }
   }
 
