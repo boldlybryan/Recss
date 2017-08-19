@@ -1,6 +1,6 @@
 {
   "name": "go-recss",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Recss is a CSS library aiming to make front-end fun and fast.",
   "main": "index.js",
   "scripts": {
